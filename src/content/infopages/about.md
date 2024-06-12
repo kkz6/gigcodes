@@ -13,12 +13,12 @@ Our process involves identifying the essence of each brand, discovering unique a
 
 ### Our Services
 
-*   Digital Strategy
-*   Art Direction
-*   UX Design
-*   UI Design
-*   Web Development
-*   E-Commerce
+* Digital Strategy
+* Art Direction
+* UX Design
+* UI Design
+* Web Development
+* E-Commerce
 
 ### Our Clients
 
