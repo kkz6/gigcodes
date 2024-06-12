@@ -1,0 +1,72 @@
+---
+const navItems = [
+  { text: "Team", href: "/system/overview" },
+  { text: "About", href: "/pages/about" },
+  {
+    text: "Contact",
+    href: "/contact",
+  },
+];
+const socialLinks = [
+  { text: "X", href: "https://twitter.com/gigcodes" },
+  { text: "GitHub", href: "https://github.com/gigcodes" },
+];
+---
+
+<div
+  class="relative flex-none overflow-hidden px-8 lg:pointer-events-none lg:fixed lg:inset-0 lg:z-40 lg:flex lg:px-0"
+>
+  <div
+    class="flex w-full bg-neutral-50 lg:pointer-events-auto lg:mr-[calc(max(2rem,50%-38rem)+39.7rem)] lg:min-w-[32rem] lg:overflow-y-auto lg:overflow-x-hidden lg:pl-[max(4rem,calc(50%-38rem))]"
+  >
+    <div
+      class="mx-auto max-w-lg lg:mx-0 lg:flex lg:w-96 lg:max-w-none lg:flex-col"
+    >
+      <div class="pb-16 pt-20 sm:pb-20 sm:pt-32 lg:py-20">
+        <a href="/">
+          <img
+            class="w-full mx-3 ml-0"
+            src="/gigcodes-logo-white.png"
+            alt="Gigcodes"
+          />
+        </a>
+        <p class="mt-4 text-sm text-neutral-500">
+          We're a software development team based in Bengaluru, India that
+          specializes in creating webapp and mobile apps that our clients love.
+        </p>
+        <ul class="mt-8" role="list">
+          {
+            navItems.map((item) => (
+              <li>
+                <a
+                  class="text-neutral-500 text-sm hover:text-kotei-800"
+                  href={item.href}
+                  title={item.text}
+                  aria-label={item.text}
+                >
+                  {item.text}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div class="flex flex-1 items-end lg:justify-start pb-8 gap-3">
+        {
+          socialLinks.map((item) => (
+            <p class="flex items-baseline">
+              <a
+                class="rounded-lg text-xs font-medium text-kotei-800 hover:text-kotei-1000"
+                href={item.href}
+                title={item.text}
+                aria-label={item.text}
+              >
+                {item.text}
+              </a>
+            </p>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</div>
